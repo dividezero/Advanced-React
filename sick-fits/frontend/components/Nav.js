@@ -1,18 +1,27 @@
 import React, { Component } from "react";
-import Header from "./Header";
 import Link from "next/link";
+import NavStyles from './styles/NavStyles'
 
 class Nav extends Component {
   render() {
     return (
-      <div>
-        <Link href="/">
-          <a>HOME</a>
-        </Link>
-        <Link href="/sell">
-          <a>SELL</a>
-        </Link>
-      </div>
+      <NavStyles>
+          <Link href="/items">
+              <a>Items</a>
+          </Link>
+          <Link href="/sell">
+              <a>Sell</a>
+          </Link>
+          <Link href="/signup">
+              <a>Signup</a>
+          </Link>
+          <Link href="/orders">
+              <a>Orders</a>
+          </Link>
+          <Link href="/account">
+              <a>Account</a>
+          </Link>
+      </NavStyles>
     );
   }
 }
